@@ -16,7 +16,7 @@ var ActionModal = React.createClass({
           <View style={styles.modalContainer}>
             <TouchableOpacity style={styles.container} onPress={this.props.onCancel}></TouchableOpacity>
             {this.props.children}
-            <Button onPress={this.props.onCancel} text={"Cancel"} />
+            <Button onPress={this.props.onCancel} text={"取消"} />
           </View>
         </Modal>
       </FadeInView>
@@ -30,7 +30,7 @@ var styles = StyleSheet.create({
   },
   modalContainer: {
     flex: 1,
-    padding: 8,
+    // padding: 8,
     paddingBottom: 0,
     justifyContent: "flex-end"
   }
