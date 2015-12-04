@@ -13,7 +13,7 @@ var FadeInView = React.createClass({
 
   componentWillReceiveProps: function(newProps) {
     return Animated.timing(this.state.fadeAnim, {
-      toValue: newProps.visible ? 0.7 : 0,
+      toValue: newProps.visible ? 0.4 : 0,
       duration: 300
     }).start();
   },
